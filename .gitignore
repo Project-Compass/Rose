@@ -127,3 +127,18 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# ========================================
+#	DEPLOYMENT FILES
+# ========================================
+
+# Site configuration
+/config/**
+*.cfg
+*.ini
+
+# …though please do include the default/example config.
+!/config/*.default.cfg
+!/config/*.example.cfg
+!/config/*.default.ini
+!/config/*.example.ini
