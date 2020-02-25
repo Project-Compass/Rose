@@ -9,7 +9,7 @@ pylint = "*"
 bandit = "*"
 
 [packages]
-discord = "*"
+discord-py = "*"
 
 [requires]
 python_version = "3.8"
