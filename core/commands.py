@@ -13,6 +13,19 @@ class CoreCommands(commands.Cog):
         self.app_info = None
         super(CoreCommands, self).__init__(*args, **kwargs)
 
+    @commands.is_owner()
+    @commands.command(
+        name="Logout",
+        aliases=[
+            "Shutdown",
+            "Terminate"
+        ],
+        brief="Initates bot logout and shutdown process."
+    )
+    async def shutdown(self, context):
+        await context.send(content="Alright, see you later! :wave:")
+        await self.bot.logout()
+
     @commands.command(
         name="Status",
         brief="Displays some quick status information about the bot."
