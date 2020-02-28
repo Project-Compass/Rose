@@ -28,6 +28,9 @@ class SECRETS:
 
 
 class ConfigManager:
+    '''
+    '''
+
     def __init__(self, configuration_path):
         self.configPath = configuration_path
         self.config = configparser.RawConfigParser()
