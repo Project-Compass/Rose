@@ -1,0 +1,22 @@
+# Configuration for Labeler action workflow
+
+# Changes to the bot core.
+core:
+  - any: ["core/", "./rose.py"]
+
+# Changes to the dependency management files.
+dependencies:
+  - any: ["Pipfile*", "docs/requirements.txt"]
+
+# Changes to the documentation.
+documentation:
+  - any: ["docs/*"]
+    all: ["!docs/requirements.txt"]
+
+# Changes to an extension/cog module.
+extension module:
+  - any: ["module/*.py"]
+
+# Changes to Git and GitHub related files.
+repository:
+  - any: [".gitignore", ".gitattributes", ".github/*"]
